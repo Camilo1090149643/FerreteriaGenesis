@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('name')->unique();
 
             $table->integer('stock');
-            $table->string('image');
+
 
             $table->decimal('purchase_price',12,2);
             $table->decimal('sell_price',12,2);
