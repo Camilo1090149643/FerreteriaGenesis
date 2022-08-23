@@ -4,19 +4,17 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PurchaseDetails extends Model
+class SaleDetail extends Model
 {
     protected $fillable =[
-        'purchase_id',
+        'sale_id',
         'product_id',
         'quantity',
         'price',
+        'discount',
+
     ];
-    public function purchase(){
-        return $this->belongsTo(Purchase::class);
-    }
     public function product(){
         return $this->belongsTo(Product::class);
     }
 }
-
